@@ -9,12 +9,15 @@ public class EntryConsole {
 	     	 System.out.println();
 		     	 
 	         doj  = new Date(9,6,2013);
-	    	 emp = new Employee("John","Cena",65000,"a5",doj);	    
+	    	 emp = new PermanentEmployee("John","Cena",65000,"a5",doj);	    
 	    	 emp.displayentry();
 	    	 System.out.println();
 		     	 
-	         doj  = new Date(8,5,2011);
-	    	 emp = new Employee("Simran","Setia",85000,"a3",doj);	    
+	    	 doj  = new Date(8,5,2011);
+	    	 emp = new ContractEmployee("Simran","Setia","a3",doj);	    
+	    	 Contractor con = new Contractor("Naukri.com",450,emp);
+	    	 
+	         
 	    	 emp.displayentry();
 	    	 System.out.println();
 		     	 

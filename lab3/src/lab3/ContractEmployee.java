@@ -2,7 +2,7 @@ package lab3;
 
 public class ContractEmployee extends Employee
 {
-             private int noOfHours;
+    private int noOfHours;
              private static int count;
              private Contractor contractor;
              public double getSalary(int hours)
@@ -13,10 +13,9 @@ public class ContractEmployee extends Employee
              {
             	 return contractor;
              }
-             
-         	public ContractEmployee(String firstName,String lastName,String grade,Date dateOfJoining)
+                   public ContractEmployee(String firstName,String lastName,String grade,Date dateOfJoining)
          	{
-         		super(firstName,lastName,grade,dateOfJoining);
+         		super(firstName,lastName,ContractEmployee.getSalary(),grade,dateOfJoining);
          		this.count=count++;
          	} 
 }

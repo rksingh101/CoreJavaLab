@@ -12,9 +12,10 @@ public class PermanentEmployee extends Employee
     {
    	 return salary;
     }
-	public PermanentEmployee(String firstName,String lastName,String grade,Date dateOfJoining)
+	
+	public PermanentEmployee(String firstName,String lastName,double salary,String grade,Date dateOfJoining)
 	{
-		super(firstName,lastName,grade,dateOfJoining);
+		super(firstName,lastName,salary,grade,dateOfJoining);
 		this.idCount=idCount++;
 	} 
 }

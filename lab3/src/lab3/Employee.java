@@ -9,11 +9,11 @@ public class Employee
 	private static int idCount;
 	Date dateOfJoining; 
 	
-	public Employee(String firstName,String lastName,String grade,Date dateOfJoining)
+	public Employee(String firstName,String lastName,double salary,String grade,Date dateOfJoining)
 	{
 		this.firstName = firstName;
 		this.lastName = lastName;
-		//this.salary   = ;
+		setSalary(salary);
 		this.grade = grade;
 		this.dateOfJoining = dateOfJoining;
 		this.idCount = ++idCount;
@@ -26,6 +26,10 @@ public class Employee
            System.out.println("Salary        : "+getSalary());
            System.out.println("Grade         : "+grade);
            System.out.println("Date          : "+dateOfJoining);
+   }
+   public void setSalary(double salary)
+   {
+	   this.salary = salary;
    }
    public double getSalary()
    {
