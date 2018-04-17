@@ -8,7 +8,7 @@ public class Account {
        {
     	   return accountNo;
        }
-       public double getaccountBalance()
+       public double getAccountBalance()
        {
     	   return accountBalance;
        }
@@ -28,8 +28,8 @@ public class Account {
        {
     	   this.customer= customer;
        }
-       /*public String toString()
+       public String toString()
        {
     	   return "Name: "+customer.getCustomerName()+" Account no: "+accountNo+" Balance: "+accountBalance;
-       }*/
+       }
 }
