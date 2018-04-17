@@ -11,17 +11,18 @@ public class Repository {
 		idcount++;
 		return accounts[idcount];
 	}
-	public boolean saveAccount(Account account, int id)
+	public Account saveAccount(Account account, int id)
 	{
-		for(int i=0;i<accounts.length;i++)
+		int i;
+		for(i=0;i<accounts.length;i++)
 		{
 			if(accounts[i].getAccountNo() ==  id)
 				{
-				accounts[idcount] = account;
+				accounts[i] = account;
 				break;
 				} 
 		}	
-		return true;
+		return accounts[i];
 	}
 	public Account findAccount(int accountNo)
 	{
