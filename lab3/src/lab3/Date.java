@@ -12,6 +12,6 @@ public Date(int day, int month, int year)
 }
 public String toString()
 {
-	return day+"/"+month+"/"+day;
+	return day+"/"+month+"/"+year;
 }
 }

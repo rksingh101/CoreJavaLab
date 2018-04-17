@@ -2,10 +2,7 @@ package lab3;
 
 public class PermanentEmployee extends Employee
 {
-	private String firstName;
-	private String lastName;
 	private double salary;
-	private String grade;
 	private static int idCount;
 	Date dateOfJoining; 
 	public double getSalary()
@@ -18,4 +15,9 @@ public class PermanentEmployee extends Employee
 		super(firstName,lastName,salary,grade,dateOfJoining);
 		this.idCount=idCount++;
 	} 
+	public void displaycount()
+	{
+		   System.out.println("Total Permanent employees entered : "+idCount);	
+		
+	}
 }

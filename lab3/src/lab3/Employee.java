@@ -13,7 +13,7 @@ public class Employee
 	{
 		this.firstName = firstName;
 		this.lastName = lastName;
-		setSalary(salary);
+		this.salary = salary;;
 		this.grade = grade;
 		this.dateOfJoining = dateOfJoining;
 		this.idCount = ++idCount;
@@ -23,13 +23,9 @@ public class Employee
 		   System.out.println("Employee ID   : "+idCount);			
            System.out.println("First Name    : "+firstName);
            System.out.println("Last  Name    : "+lastName);
-           System.out.println("Salary        : "+getSalary());
+           System.out.println("Salary        : "+salary);
            System.out.println("Grade         : "+grade);
            System.out.println("Date          : "+dateOfJoining);
-   }
-   public void setSalary(double salary)
-   {
-	   this.salary = salary;
    }
    public double getSalary()
    {

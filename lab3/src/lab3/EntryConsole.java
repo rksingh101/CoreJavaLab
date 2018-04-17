@@ -14,22 +14,28 @@ public class EntryConsole {
 	    	 System.out.println();
 		     	 
 	    	 doj  = new Date(8,5,2011);
-	    	 emp = new ContractEmployee("Simran","Setia","a3",doj);	    
-	    	 Contractor con = new Contractor("Naukri.com",450,emp);
-	    	 
-	         
+	    	 emp = new ContractEmployee("Simran","Setia",45,"a3",doj);
+	    	// System.out.println((ContractEmployee)emp);
+	    	 Contractor con = new Contractor("Naukri.com",450,(ContractEmployee)emp);
+	    	 System.out.println(con);
 	    	 emp.displayentry();
 	    	 System.out.println();
 		     	 
 	         doj  = new Date(7,6,2014);
-	    	 emp =  new Employee("Dev","Bose",3000,"a2",doj);
+	    	 emp =  new ContractEmployee("Dev","Bose",45,"a2",doj);
+	    	 con = new Contractor("Glassdoor.com",450,(ContractEmployee)emp);
+	    	 System.out.println(con);
 	    	 emp.displayentry();
 	    	 System.out.println();
 		     	 
 	 	     doj  = new Date(12,12,2016);
-	    	 emp = new Employee("Jimmy","Singh",70000,"b5",doj);
+	    	 emp = new ContractEmployee("Jimmy","Singh",25,"b5",doj);
+	    	 con = new Contractor("Naukri.com",450,(ContractEmployee)emp);
+	    	 System.out.println(con);
 	    	 emp.displayentry();
-		 		 
+	    	 emp.displaycount();
+	    	 
+	    	
 		    emp.displaycount();
 		   }
 }
