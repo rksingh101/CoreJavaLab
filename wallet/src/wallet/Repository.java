@@ -11,11 +11,12 @@ public class Repository {
 		//System.out.println("Count: "+idcount);
 		return accounts[idcount];
 	}
-	public void findAccount(int accountNo)
+	public Account findAccount(int accountNo)
 	{
-		System.out.println("Account id:"+accounts[accountNo].getAccountNo());
-		System.out.println("Customer Name:"+accounts[accountNo].getCustomer().getCustomerName());
-		System.out.println("Account Balance:"+accounts[accountNo].getaccountBalance());	
+		return accounts[accountNo];
+		//System.out.println("Account id: "+accounts[accountNo].getAccountNo());
+		//System.out.println("Customer Name:"+accounts[accountNo].getCustomer().getCustomerName());
+		//System.out.println("Account Balance:"+accounts[accountNo].getaccountBalance());	
 		//System.out.println(accounts[accountNo]);
 	}
 }

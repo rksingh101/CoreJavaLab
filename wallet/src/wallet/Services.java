@@ -17,4 +17,14 @@ public class Services {
 		return acc;
 	}
 	
+	public void showBalance(int accountNo)
+	{
+		Repository repo = new Repository();
+		System.out.println();
+		Account acc = repo.findAccount(accountNo);
+		System.out.println("Account id     :"+acc.getAccountNo());
+		System.out.println("Customer Name  :"+acc.getCustomer().getCustomerName());
+		System.out.println("Account Balance:"+acc.getaccountBalance());	
+	}
+	
 }

@@ -5,7 +5,7 @@ public class client {
 
 	public static void main(String[] args)
 	{
-		Repository repo = new Repository();
+		
 		Services serv = new Services();
 		Account ac = serv.createAccount("Raj", 170000);
 		//System.out.println(ac);
@@ -18,13 +18,10 @@ public class client {
 		ac = serv.createAccount("Sam", 340000);
 		//System.out.println(ac);
 		
-		System.out.println();
-	    repo.findAccount(3);
+	    serv.showBalance(3);
 	    
-	    System.out.println();
-	    repo.findAccount(2);
+	    serv.showBalance(2);
 	    
-	    System.out.println();
-	    repo.findAccount(1);
+	    serv.showBalance(1);
 	}
 }
