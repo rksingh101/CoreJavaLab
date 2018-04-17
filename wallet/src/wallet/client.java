@@ -7,15 +7,15 @@ public class client {
 	{
 		
 		Services serv = new Services();
-		Account ac = serv.createAccount("Raj", 170000);
+		serv.createAccount("Raj Ramesh", 170000);
 		//System.out.println(ac);
 		
 		serv = new Services();
-		ac = serv.createAccount("Dinesh", 1780000);
+		serv.createAccount("Dinesh Kartik",980000);
 		//System.out.println(ac);
 		
 		serv = new Services();
-		ac = serv.createAccount("Sam", 340000);
+		serv.createAccount("Sam Shambhu", 340000);
 		//System.out.println(ac);
 		
 	    serv.showBalance(3);
