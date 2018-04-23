@@ -4,7 +4,7 @@ public class Account
 {
 	private int accountNo;
     private double accountBalance;
-    //functinal logic
+    //functional logic
     protected boolean withdraw(double amount)
     {
     	accountBalance = accountBalance - amount;
