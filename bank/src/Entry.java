@@ -9,5 +9,6 @@ public class Entry {
         Teller teller = new Teller();
         teller.setBank(bank);	
         teller.performTransfer();
+        teller.getBank().showTotalBalance();
 	}
 }
