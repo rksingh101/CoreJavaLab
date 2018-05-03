@@ -33,8 +33,13 @@ public class Exchange {
 			BufferedReader in = new BufferedReader(new InputStreamReader(
                         clientSocket.getInputStream()));
             String inputLine;
-            while ((inputLine = in.readLine()) != null) 
-             System.out.println(inputLine);
+           // while ((inputLine = in.readLine()) != null) 
+            do
+            {
+            	inputLine = in.readLine();
+            	System.out.println(inputLine);
+            }
+            while(in.ready());
             // in.close();
 			
 							
@@ -46,7 +51,7 @@ public class Exchange {
 							
 			pOut.println("HTTP/1.1 200 Ok");
 			pOut.println();
-			pOut.println("Hi, Received!");
+			pOut.println("Hi, Hommies!");
 			pOut.close();
 						} catch (IOException e) {
 							e.printStackTrace();
