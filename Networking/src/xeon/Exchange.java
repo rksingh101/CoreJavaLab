@@ -20,7 +20,8 @@ public class Exchange {
 		
 		while(true){
 	      final Socket clientSocket = service.accept();
-			
+	      
+	      
 //			System.out.println("Client is now connected");
 //			System.out.println(clientSocket);
 			
